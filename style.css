@@ -1241,3 +1241,49 @@ h6 {
   opacity: 1;
   visibility: visible;
 }
+
+/* logo slider css */
+   .logo-slider {
+      overflow: hidden;
+      position: relative;
+      background-color: #f8f9fa;
+      padding: 30px 0;
+    }
+
+    .logo-slide-track {
+      display: flex;
+      width: calc(250px * 10); /* Adjust for number of logos */
+      animation: scroll 20s linear infinite;
+    }
+
+    .logo-slide {
+      height: 100px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .logo-slide img {
+      max-width: 100%;
+      max-height: 80px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-slide img:hover {
+      filter: grayscale(0%);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .logo-slide-track {
+        animation-duration: 30s;
+      }
+    }
