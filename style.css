@@ -1300,4 +1300,7 @@ h6 {
       .logo-slide {
         width: 180px;
       }
+      .p-5{
+        padding: 2rem 1.5rem;
+      }
     }
