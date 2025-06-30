@@ -1087,7 +1087,7 @@ h6 {
   border: none;
 }
 .faq__v2 .custom-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  background-color: transparent;
+  background-color: #fff;
   color: var(--inverse-color);
   -webkit-box-shadow: 0 1px 1px rgba(var(--inverse-color-rgb), 0.05);
           box-shadow: 0 1px 1px rgba(var(--inverse-color-rgb), 0.05);
