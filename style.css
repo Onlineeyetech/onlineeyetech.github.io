@@ -9,13 +9,13 @@ Buy Pro
 [data-bs-theme=light] {
   --bs-body-bg: #f8f8f8;
   --bs-body-color: #494B5B;
-  --bs-primary: #215C5C;
+  --bs-primary: #0A1F44;
   --bs-primary-rgb: 33, 92, 92;
   --bs-primary-hover: #144B4B;
   --bs-primary-hover-rgb: 20, 75, 75;
   --bs-secondary: #CCE8C9;
   --bs-secondary-rgb: #eae9e9;
-  --bs-heading-color: #16181B;
+  --bs-heading-color: #0A1F44;
   --inverse-color: #494B5B;
   --inverse-color-rgb: #C0C0C0;
   --bs-link-color: var(--bs-primary);
