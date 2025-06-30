@@ -7,7 +7,7 @@ Buy Pro
 */
 :root,
 [data-bs-theme=light] {
-  --bs-body-bg: #ffffff;
+  --bs-body-bg: #f8f8f8;
   --bs-body-color: #494B5B;
   --bs-primary: #215C5C;
   --bs-primary-rgb: 33, 92, 92;
