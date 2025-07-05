@@ -581,11 +581,13 @@ h6 {
 .fbs__net-navbar.active {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 95%;
   background-color: var(--nav-bg) !important;
   -webkit-box-shadow: 0 0.1875rem 0.375rem rgba(var(--bs-black-rgb), 0.05) !important;
           box-shadow: 0 0.1875rem 0.375rem rgba(var(--bs-black-rgb), 0.05) !important;
-  border-radius: 50px;
+      border-radius: 50px;
+    margin: 30px 40px;
+  
 }
 .fbs__net-navbar.active .navbar-brand {
   color: rgba(var(--inverse-color-rgb), 1) !important;
