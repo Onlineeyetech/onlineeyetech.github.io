@@ -364,6 +364,10 @@ h6 {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  ..fbs__net-navbar.active{
+margin: 20px 0px;
+    width: 100%;
+  }
 }
 .fbs__net-navbar .navbar-nav > li > .nav-link.active {
   color: var(--bs-white);
@@ -1179,6 +1183,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .footer {
   background-color: #1B2A49;
   font-size: 15px;
+      color: #fff;
 }
 
 .footer h2, .footer h3, .footer h4 {
