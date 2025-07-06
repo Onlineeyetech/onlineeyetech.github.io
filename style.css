@@ -1293,7 +1293,10 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       opacity: 1;
       transform: scale(1.05);
     }
-
+.logo-faster{
+    width: 180px;
+    padding: 5px 0px;
+}
     @keyframes scroll {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
