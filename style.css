@@ -584,7 +584,7 @@ h6 {
   top: 0;
   width: 95%;
   background-color: var(--nav-bg) !important;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       border-radius: 50px;
     margin: 30px 40px;
   
