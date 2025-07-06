@@ -1307,10 +1307,11 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         width: 180px;
       }
       .p-5{
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem!important;
       }
         .fbs__net-navbar.active{
 margin: 20px 0px;
     width: 100%;
   }
+        
     }
