@@ -6,6 +6,6 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
  @media (max-width: 768px) {
            .p-5{
-        padding: 2rem 1rem;
+        padding: 2rem 1rem!impotant;
       }
     }
