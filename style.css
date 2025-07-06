@@ -286,7 +286,7 @@ h6 {
   width: 100%;
   background-color: transparent !important;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px!important;
 }
 @media (min-width: 992px) {
   .fbs__net-navbar {
@@ -585,7 +585,7 @@ h6 {
   top: 0;
   width: 95%;
   background-color: var(--nav-bg) !important;
--webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px!important;
       border-radius: 50px;
     margin: 30px 40px;
   
