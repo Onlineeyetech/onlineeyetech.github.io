@@ -1309,9 +1309,11 @@ width:100px;
       .logo-slide-track {
         animation-duration: 35s;
       }
-
+      .logo {
+      width:100px;
+      }
       .logo-slide {
-        width: 180px;
+        width: 65px;
       }
       .p-5{
         padding: 2rem 1rem!important;
