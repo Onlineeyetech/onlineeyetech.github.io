@@ -539,3 +539,36 @@ const countdownInit = () => {
 };
 document.addEventListener('DOMContentLoaded', countdownInit);
 
+// testimonail
+JavaScript (Testimonial depend on jQuery and Owl carousel.)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+ 
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1000,2],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:false,
+        autoplay:true
+    });
+});
+
+
+// testimonail
