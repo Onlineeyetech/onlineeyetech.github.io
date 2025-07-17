@@ -697,6 +697,44 @@ License: https://freebootstrap.net/license
             </div>
           </div>
         </section>
+         <script>
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        country: document.getElementById("country").value,
+        service: document.getElementById("service").value,
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbyCZ-gcgQoOnpIBAhZQX_r4eZPVao3fULiXc3BRJpFUMRk0MPVzEdWNP22Jn-X--xhyDg/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(res => res.json())
+      .then(response => {
+        if (response.status === "success") {
+          successMessage.classList.remove("d-none");
+          errorMessage.classList.add("d-none");
+          form.reset();
+        } else {
+          throw new Error("Submit failed");
+        }
+      })
+      .catch(err => {
+        successMessage.classList.add("d-none");
+        errorMessage.classList.remove("d-none");
+      });
+    });
+  </script>
         <!-- End Contact-->
 
 
@@ -833,43 +871,7 @@ License: https://freebootstrap.net/license
     });
 </script>
 
-<!-- form script -->
-    <script>
-  const form = document.getElementById("contactForm");
-  const successMsg = document.getElementById("successMessage");
-  const errorMsg = document.getElementById("errorMessage");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = {
-      name: form.name.value,
-      email: form.email.value,
-      subject: form.subject.value,
-      message: form.message.value,
-    };
-
-    fetch("YOUR_WEB_APP_URL_HERE", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.result === "success") {
-        successMsg.classList.remove("d-none");
-        errorMsg.classList.add("d-none");
-        form.reset();
-      } else {
-        throw new Error();
-      }
-    })
-    .catch(() => {
-      successMsg.classList.add("d-none");
-      errorMsg.classList.remove("d-none");
-    });
-  });
-</script>
 
   </body>
 </html>
