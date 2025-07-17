@@ -294,22 +294,7 @@
 
   <button class="read-more-btn">Read More</button>
 
-  <script>
-    const container = document.querySelector('.testimonial-container');
-    const button = document.querySelector('.read-more-btn');
-    let currentStep = 1;
-
-    button.addEventListener('click', () => {
-      currentStep++;
-
-      if (currentStep === 2) {
-        container.classList.add('show-rows-2');
-      } else {
-        container.classList.add('show-all');
-        button.style.display = 'none';
-      }
-    });
-  </script>
+ 
 
 </body>
 </html>
