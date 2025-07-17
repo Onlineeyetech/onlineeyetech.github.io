@@ -833,6 +833,43 @@ License: https://freebootstrap.net/license
     });
 </script>
 
+<!-- form script -->
+    <script>
+  const form = document.getElementById("contactForm");
+  const successMsg = document.getElementById("successMessage");
+  const errorMsg = document.getElementById("errorMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
+    };
+
+    fetch("YOUR_WEB_APP_URL_HERE", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.result === "success") {
+        successMsg.classList.remove("d-none");
+        errorMsg.classList.add("d-none");
+        form.reset();
+      } else {
+        throw new Error();
+      }
+    })
+    .catch(() => {
+      successMsg.classList.add("d-none");
+      errorMsg.classList.remove("d-none");
+    });
+  });
+</script>
 
   </body>
 </html>
