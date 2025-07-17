@@ -199,11 +199,18 @@
       border-bottom-right-radius: 25px;
       z-index: 99;
     }
+    .testimonial-container.collapsed .testimonial {
+  display: none;
+}
+.testimonial-container.collapsed .testimonial:nth-child(-n+3) {
+  display: flex;
+}
+
   </style>
 </head>
 <body class="bodyyy">
-
-  <div class="testimonial-container">
+<div class="testimonial-container collapsed">
+ 
     <!-- Repeat testimonial item 6 times -->
     <div class="testimonial">
       <span class="quote open">“</span>
