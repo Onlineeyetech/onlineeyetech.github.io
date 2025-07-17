@@ -705,12 +705,13 @@ License: https://freebootstrap.net/license
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        country: document.getElementById("country").value,
-        service: document.getElementById("service").value,
-      };
+    const data = {
+  name: document.getElementById("name").value,
+  email: document.getElementById("email").value,
+  country: document.getElementById("subject").value, // use correct ID
+  service: document.getElementById("message").value, // use correct ID
+};
+
 
       fetch("https://script.google.com/macros/s/AKfycbwPm6Q_B443XvuWBSRCUII_ZwkUc4seN7-01r7OIRKACjNM1XnxPJQ0s7n2bjaJSmhj4w/exec", {
         method: "POST",
