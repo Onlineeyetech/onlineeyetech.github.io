@@ -798,5 +798,31 @@ License: https://freebootstrap.net/license
     });
 </script>
 
+    <script>
+  //readmore Load the testimonial HTML
+  fetch('testimonials.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('testimonial-section').innerHTML = data;
+
+      // Wait for the HTML to load, then run Read More JS
+      const container = document.querySelector('.testimonial-container');
+      const button = document.querySelector('.read-more-btn');
+      let currentStep = 1;
+
+      if (button) {
+        button.addEventListener('click', () => {
+          currentStep++;
+          if (currentStep === 2) {
+            container.classList.add('show-rows-2');
+          } else {
+            container.classList.add('show-all');
+            button.style.display = 'none';
+          }
+        });
+      }
+    });
+</script>
+
   </body>
 </html>
