@@ -205,6 +205,14 @@
 .testimonial-container.collapsed .testimonial:nth-child(-n+3) {
   display: flex;
 }
+.testimonial-container .testimonial {
+  display: none;
+}
+.testimonial-container.collapsed .testimonial:nth-child(-n+3),
+.testimonial-container.show-rows-2 .testimonial:nth-child(-n+6),
+.testimonial-container.show-all .testimonial {
+  display: flex;
+}
 
   </style>
 </head>
