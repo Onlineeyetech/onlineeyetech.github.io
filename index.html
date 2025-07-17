@@ -409,7 +409,8 @@ License: https://freebootstrap.net/license
 <!--   logo slider -->
         <!-- ======= Testimonials =======-->
 
-        
+        <div id="testimonial-section"></div>
+
 <!--         <section class="section testimonials__v2" id="testimonials">
           <div class="container">
             <div class="row mb-5">
@@ -789,5 +790,13 @@ License: https://freebootstrap.net/license
      
 
     <!-- End JavaScripts-->
+    <script>
+  fetch('testimonials.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('testimonial-section').innerHTML = data;
+    });
+</script>
+
   </body>
 </html>
