@@ -23,6 +23,7 @@
       width: 100%;
       max-width: 1200px;
       overflow: hidden;
+      transition: max-height 0.6s ease;
     }
 
     @media (min-width: 768px) {
@@ -213,7 +214,13 @@
 .testimonial-container.show-all .testimonial {
   display: flex;
 }
+.testimonial-container.collapsed {
+  max-height: 900px; /* Show only first 3 (approx) */
+}
 
+.testimonial-container.expanded {
+  max-height: 5000px; /* Show all */
+}
   </style>
 </head>
 <body class="bodyyy">
