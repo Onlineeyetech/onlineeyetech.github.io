@@ -1150,7 +1150,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 .testimonials__v2 .testimonial {
   border: 1px solid #C0C0C0;
-  margin-top:35px;
+  margin-top:0px;
 }
 .testimonials__v2 .testimonial-author .author-img {
   -webkit-box-flex: 0;
