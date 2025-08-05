@@ -30,7 +30,7 @@ Buy Pro
 }
 
 body {
-  font: 1rem/1.7 "Inter", sans-serif;
+  font: sans-serif;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
   -webkit-font-smoothing: antialiased;
