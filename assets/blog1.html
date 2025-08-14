@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eCommerce Blog Template – SEO Friendly</title>
+  <meta name="description" content="SEO-friendly blog template for eCommerce topics with unique, conflict-free classes." />
+
+  <!-- Primary color + typography variables -->
+  <style>
+    :root{
+      --rb-ecb-bg:#0f172a;            /* slate-900 */
+      --rb-ecb-panel:#0b1226;         /* slightly darker */
+      --rb-ecb-text:#e5e7eb;          /* gray-200 */
+      --rb-ecb-muted:#9aa3b2;         /* gray */
+      --rb-ecb-accent:#1d9ad4;        /* your requested brandish blue */
+      --rb-ecb-accent-2:#ee7c30;      /* secondary accent */
+      --rb-ecb-border:#23314d;
+      --rb-ecb-radius:16px;
+      --rb-ecb-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --rb-ecb-maxw: 1100px;
+      --rb-ecb-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    /* ---------- Base / Reset (scoped by class prefix) ---------- */
+    body{margin:0;background:linear-gradient(180deg,#0e1426, #0a0f1f 55%, #0b0f1c);color:var(--rb-ecb-text);font-family:var(--rb-ecb-font);}
+    .rb-ecb-wrap{max-width:var(--rb-ecb-maxw);margin:auto;padding:24px;}
+    .rb-ecb-card{background:radial-gradient(1200px 600px at -10% -10%, rgba(29,154,212,.15), transparent 50%),
+                 radial-gradient(800px 400px at 110% -20%, rgba(238,124,48,.12), transparent 55%),
+                 linear-gradient(180deg, #0f172a, #0c1325);
+                 border:1px solid var(--rb-ecb-border);border-radius:var(--rb-ecb-radius);box-shadow:var(--rb-ecb-shadow)}
+
+    /* ---------- Header ---------- */
+    .rb-ecb-header{display:flex;align-items:center;gap:16px;padding:18px 22px;border-bottom:1px solid var(--rb-ecb-border)}
+    .rb-ecb-logo{width:36px;height:36px;border-radius:50%;background:linear-gradient(145deg,var(--rb-ecb-accent),#3cc4ff);display:grid;place-items:center;font-weight:700;color:#07131c}
+    .rb-ecb-brand{font-size:18px;font-weight:700;letter-spacing:.4px}
+
+    /* ---------- Hero / Title ---------- */
+    .rb-ecb-hero{padding:28px 22px 10px}
+    .rb-ecb-eyebrow{font-size:12px;letter-spacing:.18em;color:var(--rb-ecb-muted);text-transform:uppercase}
+    .rb-ecb-title{margin:8px 0 10px;font-size:clamp(26px, 3.5vw, 40px);line-height:1.15}
+    .rb-ecb-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--rb-ecb-muted);font-size:14px}
+    .rb-ecb-meta b{color:var(--rb-ecb-text)}
+
+    /* ---------- Breadcrumb ---------- */
+    .rb-ecb-breadcrumb{padding:0 22px 10px;font-size:13px;color:var(--rb-ecb-muted)}
+    .rb-ecb-breadcrumb a{color:var(--rb-ecb-accent);text-decoration:none}
+
+    /* ---------- Layout ---------- */
+    .rb-ecb-grid{display:grid;grid-template-columns: 1fr;gap:24px;padding:10px 22px 26px}
+    @media(min-width:980px){
+      .rb-ecb-grid{grid-template-columns: 250px 1fr}
+    }
+
+    /* ---------- Sidebar (TOC) ---------- */
+    .rb-ecb-side{position:relative}
+    .rb-ecb-toc{position:sticky;top:18px;background:rgba(10,15,30,.6);backdrop-filter: blur(8px);border:1px solid var(--rb-ecb-border);border-radius:14px;padding:14px}
+    .rb-ecb-toc h3{margin:0 0 8px;font-size:14px;color:var(--rb-ecb-muted);text-transform:uppercase;letter-spacing:.12em}
+    .rb-ecb-toc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+    .rb-ecb-toc a{display:block;padding:8px 10px;border-radius:10px;text-decoration:none;color:var(--rb-ecb-text);border:1px solid transparent}
+    .rb-ecb-toc a:hover{border-color:var(--rb-ecb-border);background:rgba(255,255,255,.03)}
+
+    /* ---------- Content ---------- */
+    .rb-ecb-content{line-height:1.75;font-size:17px}
+    .rb-ecb-content h2{margin:28px 0 10px;font-size:clamp(20px,2.4vw,28px)}
+    .rb-ecb-content h3{margin:18px 0 8px;font-size:clamp(18px,2vw,22px)}
+    .rb-ecb-content p{margin:10px 0}
+    .rb-ecb-content .rb-ecb-callout{border:1px dashed var(--rb-ecb-border);border-radius:12px;padding:12px 14px;background:rgba(29,154,212,.08)}
+    .rb-ecb-kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0b1626;border:1px solid var(--rb-ecb-border);padding:2px 6px;border-radius:6px}
+
+    /* ---------- Share / Tags / CTA ---------- */
+    .rb-ecb-footerbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-top:1px solid var(--rb-ecb-border);margin-top:22px;padding-top:18px}
+    .rb-ecb-tags{display:flex;flex-wrap:wrap;gap:8px}
+    .rb-ecb-tag{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--rb-ecb-border);background:rgba(255,255,255,.03)}
+    .rb-ecb-share{display:flex;gap:8px}
+    .rb-ecb-btn{appearance:none;border:none;cursor:pointer;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--rb-ecb-accent), #44b7ea);color:#052132;font-weight:700}
+    .rb-ecb-btn--ghost{background:transparent;border:1px solid var(--rb-ecb-border);color:var(--rb-ecb-text)}
+
+    /* ---------- Author box ---------- */
+    .rb-ecb-author{display:flex;gap:14px;align-items:center;margin-top:24px;padding:14px;border:1px solid var(--rb-ecb-border);border-radius:14px;background:rgba(255,255,255,.02)}
+    .rb-ecb-author img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+
+    /* ---------- Related posts grid ---------- */
+    .rb-ecb-related{margin-top:26px}
+    .rb-ecb-related h3{margin:0 0 10px}
+    .rb-ecb-relgrid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:720px){.rb-ecb-relgrid{grid-template-columns:repeat(3,1fr)}}
+    .rb-ecb-rel{border:1px solid var(--rb-ecb-border);border-radius:12px;padding:12px;background:rgba(255,255,255,.02)}
+    .rb-ecb-rel a{color:var(--rb-ecb-text);text-decoration:none}
+
+    /* ---------- Code blocks ---------- */
+    .rb-ecb-code{background:#0a1324;border:1px solid var(--rb-ecb-border);border-radius:12px;padding:14px;overflow:auto}
+    .rb-ecb-code pre{margin:0;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New",monospace;font-size:14px}
+  </style>
+
+  <!-- JSON-LD Article Schema (edit fields per post) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Top 7 eCommerce Platforms for Your Online Store in 2025",
+    "description": "A comparative guide to Shopify, WooCommerce, Wix, Magento, BigCommerce, and more.",
+    "author": {"@type":"Person","name":"Rajat Bharawa"},
+    "publisher": {"@type":"Organization","name":"OnlineEye Technologies"},
+    "datePublished": "2025-08-14",
+    "image": "https://via.placeholder.com/1200x630.png?text=eCommerce+Platforms+2025"
+  }
+  </script>
+</head>
+<body>
+  <div class="rb-ecb-wrap">
+    <article class="rb-ecb-card" aria-labelledby="rb-ecb-title">
+      <header class="rb-ecb-header">
+        <div class="rb-ecb-logo">OE</div>
+        <div class="rb-ecb-brand">OnlineEye • Blog</div>
+      </header>
+
+      <div class="rb-ecb-hero">
+        <div class="rb-ecb-eyebrow">Guides • eCommerce • 2025</div>
+        <h1 id="rb-ecb-title" class="rb-ecb-title">Top 7 eCommerce Platforms for Your Online Store in 2025</h1>
+        <div class="rb-ecb-meta">
+          <span><b>By:</b> Team OnlineEye</span>
+          <span>•</span>
+          <span><b>Updated:</b> 14 Aug 2025</span>
+          <span>•</span>
+          <span><b>Read:</b> 9–12 min</span>
+        </div>
+      </div>
+
+      <nav class="rb-ecb-breadcrumb" aria-label="Breadcrumb">
+        <a href="#">Home</a> › <a href="#">Blog</a> › eCommerce Platforms
+      </nav>
+
+      <section class="rb-ecb-grid">
+        <!-- Sidebar / TOC -->
+        <aside class="rb-ecb-side">
+          <div class="rb-ecb-toc" role="navigation" aria-label="Table of contents">
+            <h3>On this page</h3>
+            <ul>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#shopify">Shopify</a></li>
+              <li><a href="#woocommerce">WooCommerce</a></li>
+              <li><a href="#wix">Wix eCommerce</a></li>
+              <li><a href="#magento">Magento (Adobe Commerce)</a></li>
+              <li><a href="#bigcommerce">BigCommerce</a></li>
+              <li><a href="#squarespace">Squarespace</a></li>
+              <li><a href="#opencart">OpenCart</a></li>
+              <li><a href="#choose">How to Choose</a></li>
+              <li><a href="#cta">Get Help</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="rb-ecb-content">
+          <section id="intro">
+            <p>Picking the right platform sets your store’s speed, SEO, integrations, and long‑term scalability. Below is a concise breakdown you can use to decide quickly.</p>
+            <div class="rb-ecb-callout"><b>Tip:</b> Start with a pilot catalog (10–25 SKUs) and validate speed + checkout before migrating your full inventory.</div>
+          </section>
+
+          <h2 id="shopify">Shopify – Best All‑Rounder</h2>
+          <p>Great app ecosystem, secure hosting, fast checkout, and dozens of sales channels. Ideal for SMBs to mid‑market brands.</p>
+
+          <h2 id="woocommerce">WooCommerce – Best for WordPress</h2>
+          <p>Highly flexible, content‑first stores. Requires good hosting + maintenance but unbeatable for content marketing teams.</p>
+
+          <h2 id="wix">Wix eCommerce – Best for Beginners</h2>
+          <p>Drag‑and‑drop simplicity with built‑in features. Best for smaller catalogs and quick launches.</p>
+
+          <h2 id="magento">Magento (Adobe Commerce) – Best for Enterprise</h2>
+          <p>Powerful, customizable, and scalable. Demands expert development and infrastructure.</p>
+
+          <h2 id="bigcommerce">BigCommerce – Best for Growing Brands</h2>
+          <p>Strong native SEO, multi‑storefront, and B2B features. Good for fast‑growing product catalogs.</p>
+
+          <h2 id="squarespace">Squarespace – Best for Creative Catalogs</h2>
+          <p>Modern templates and visuals first. Great for portfolios that sell.</p>
+
+          <h2 id="opencart">OpenCart – Best Open‑Source</h2>
+          <p>Lightweight and developer‑friendly. Choose quality extensions, keep updates regular.</p>
+
+          <h2 id="choose">How to Choose the Right Platform</h2>
+          <ul>
+            <li><span class="rb-ecb-kbd">Speed</span>: Core Web Vitals + server performance</li>
+            <li><span class="rb-ecb-kbd">SEO</span>: URLs, schema, sitemaps, faceted nav</li>
+            <li><span class="rb-ecb-kbd">Ops</span>: Inventory, shipping, returns, taxes</li>
+            <li><span class="rb-ecb-kbd">Scale</span>: Multi‑store, multi‑currency, B2B/B2C</li>
+            <li><span class="rb-ecb-kbd">TCO</span>: Build + apps + hosting + maintenance</li>
+          </ul>
+
+          <div id="cta" class="rb-ecb-footerbar">
+            <div class="rb-ecb-tags">
+              <span class="rb-ecb-tag">#ecommerce</span>
+              <span class="rb-ecb-tag">#platforms</span>
+              <span class="rb-ecb-tag">#seo</span>
+            </div>
+            <div class="rb-ecb-share">
+              <button class="rb-ecb-btn" onclick="navigator.clipboard.writeText(location.href)">Copy Link</button>
+              <button class="rb-ecb-btn rb-ecb-btn--ghost">Get a Free Audit</button>
+            </div>
+          </div>
+
+          <div class="rb-ecb-author">
+            <img src="https://via.placeholder.com/96x96.png?text=RB" alt="Author avatar" />
+            <div>
+              <strong>Rajat Bharawa</strong>
+              <div class="rb-ecb-muted">eCommerce & Shopify Specialist • India & International</div>
+            </div>
+          </div>
+
+          <section class="rb-ecb-related">
+            <h3>Related reads</h3>
+            <div class="rb-ecb-relgrid">
+              <div class="rb-ecb-rel"><a href="#">eCommerce SEO: Practical Checklist for 2025</a></div>
+              <div class="rb-ecb-rel"><a href="#">Speed Up Your Store: Core Web Vitals for Non‑Devs</a></div>
+              <div class="rb-ecb-rel"><a href="#">Payment Gateways in 2025: India, US, EU</a></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Optional: tiny script to smooth-scroll TOC links (no external deps) -->
+  <script>
+    document.querySelectorAll('.rb-ecb-toc a').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if(id.startsWith('#')){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'}); }
+      })
+    })
+  </script>
+</body>
+</html>
