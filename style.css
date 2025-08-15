@@ -1326,3 +1326,64 @@ margin: 20px 0px;
   }
         
     }
+/* first video sectiom css */
+#seoHeroSection, 
+#seoHeroSection * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Hero Section --- */
+#seoHeroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#seoHeroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#seoHeroOverlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.seoHeroTitle {
+  font-size: 2.5rem;
+  max-width: 900px;
+}
+
+.seoHeroDesc {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .seoHeroTitle {
+    font-size: 1.8rem;
+  }
+  .seoHeroDesc {
+    font-size: 1rem;
+  }
+}
+/* first video sectiom css */
