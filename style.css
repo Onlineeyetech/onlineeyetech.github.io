@@ -1460,3 +1460,85 @@ margin: 20px 0px;
         }
     }
 /* full stack develoepr section */
+/*  industries we work section */
+/* Section */
+#industries-section {
+  background: #f9fafb;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+#industries-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.industry-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.industry-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.industry-card .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Icon colors */
+.bg-indigo { background: #6366f1; }
+.bg-green { background: #10b981; }
+.bg-pink { background: #ec4899; }
+.bg-yellow { background: #f59e0b; }
+.bg-blue { background: #3b82f6; }
+.bg-red { background: #ef4444; }
+
+/* Text */
+.industry-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/*  industries we work section */
