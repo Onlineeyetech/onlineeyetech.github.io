@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /private/
-Allow: /sitemap.xml
+Allow: /
 
+Sitemap: https://onlineeye.in/sitemap.xml
