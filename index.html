@@ -1047,38 +1047,7 @@ License: https://freebootstrap.net/license
     });
 </script>
 
-    <script>
-  //readmore Load the testimonial HTML
-  // Load testimonials
-  fetch('assets/testimonials.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('testimonial-section').innerHTML = data;
-
-      const container = document.querySelector('.testimonial-container');
-      const button = document.querySelector('.read-more-btn');
-
-      let expanded = false; // toggle state
-
-      if (button) {
-        button.addEventListener('click', () => {
-          expanded = !expanded;
-
-          if (expanded) {
-            container.classList.remove('show-rows-2');
-            container.classList.add('show-all');
-            button.textContent = 'Show Less';
-          } else {
-            container.classList.remove('show-all');
-            container.classList.remove('show-rows-2');
-            container.classList.add('collapsed');
-            button.textContent = 'Read More';
-          }
-        });
-      }
-    });
-</script>
-
+   
 
 
   </body>
