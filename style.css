@@ -1542,3 +1542,92 @@ margin: 20px 0px;
 }
 
 /*  industries we work section */
+/* testimonial css */
+ .testimonials {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .testimonial-card {
+      border-radius: 12px;
+      padding: 20px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background: #f3f4f6;
+    }
+    .testimonial-card .quote {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .testimonial-card .author {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .testimonial-card .author-img-wrap {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: visible;
+      right: 0;
+      margin-right: 29px;
+      --shadow-color: #3b82f6;
+    }
+    .testimonial-card .author-img-wrap::before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: -5px;
+      width: 70px;
+      height: 70px;
+      border-radius: 0 0 0 50px;
+      background: var(--shadow-color);
+      z-index: 0;
+    }
+    .testimonial-card .author-img-wrap img {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      border-radius: 0 0 0 50px;
+      object-fit: cover;
+      border: 4px solid white;
+      z-index: 1;
+    }
+    .testimonial-card h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .testimonial-card span {
+      font-size: 14px;
+      color: #555;
+    }
+    .swiper {
+      width: 100%;
+      overflow: hidden;
+    }
+    .swiper-wrapper {
+      display: flex;
+    }
+    .swiper-slide {
+      flex-shrink: 0;
+      width: auto;
+    }
+    .testimg {
+      text-align: end;
+      align-items: flex-end;
+      float: right;
+      right: 0;
+      position: absolute;
+    }
+/* testimonial css */
