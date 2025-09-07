@@ -148,6 +148,84 @@ License: https://freebootstrap.net/license
 
 
 
+  <style>
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-content {
+      padding: 15px;
+    }
+
+    .blog-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .blog-content h2 a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .blog-content h2 a:hover {
+      color: #0077cc;
+    }
+
+    .blog-excerpt {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .read-more {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    
+  </style>
   </head>
   <body>
     
@@ -269,8 +347,60 @@ License: https://freebootstrap.net/license
       
       <!-- ======= Main =======-->
 
-Hello
-        
+  <div class="container">
+    <h1>Our Blog</h1>
+    <div class="blog-grid">
+
+      <!-- Blog Card 1 -->
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Blog+Image+1" alt="Blog 1">
+        </div>
+        <div class="blog-content">
+          <h2><a href="#">How to Find the Right Cartridge Model for Your Printer</a></h2>
+          <p class="blog-excerpt">To identify the correct cartridge model for your printer, simply lift the printer’s top cover to check…</p>
+          <a href="#" class="read-more">Read this post →</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Blog+Image+2" alt="Blog 2">
+        </div>
+        <div class="blog-content">
+          <h2><a href="#">Fixing Common Toner Cartridge Issues: A Quick Guide</a></h2>
+          <p class="blog-excerpt">Struggling with cartridge errors or light printouts? These quick fixes will help keep your printer running…</p>
+          <a href="#" class="read-more">Read this post →</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Blog+Image+3" alt="Blog 3">
+        </div>
+        <div class="blog-content">
+          <h2><a href="#">Compatible or Third-party Cartridges are Efficient, Legal and Accessible</a></h2>
+          <p class="blog-excerpt">Third-party cartridges are cost-effective, perfectly legal, and easy to find for almost any printer model…</p>
+          <a href="#" class="read-more">Read this post →</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 4 -->
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Blog+Image+4" alt="Blog 4">
+        </div>
+        <div class="blog-content">
+          <h2><a href="#">Say “NO” to Automatic Printer Updates: Here’s Why</a></h2>
+          <p class="blog-excerpt">While automatic updates might sound helpful, they often cause compatibility issues with cartridges…</p>
+          <a href="#" class="read-more">Read this post →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
         <!-- ======= Footer =======-->
         <footer class="footer pt-5 pb-5">
           <div class="container">
