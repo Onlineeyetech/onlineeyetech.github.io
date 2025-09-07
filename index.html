@@ -57,6 +57,9 @@ License: https://freebootstrap.net/license
     </script>
     <meta name="google-site-verification" content="0o-jCEnP2X9LITsrymrbbeqRDGiZKWiQwu4ll31RUA0" />
   <meta name="msvalidate.01" content="558844599A4D22AE221DCBBAF67E8F6F" />
+      <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -629,6 +632,72 @@ License: https://freebootstrap.net/license
 <!--   logo slider -->
         <!-- ======= Testimonials =======-->
 
+  <div class="swiper testimonials-swiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Testimonial 1 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card" style="background: #f3f4f6">
+          <div class="author-img-wrap" style="--shadow-color: #3b82f6">
+            <img src="https://via.placeholder.com/70" alt="John Doe" class="testimg">
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24" style="margin-top:50px;">
+            <path d="M7.17 6C5.18 6 3.5 7.68 3.5 9.67c0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55zm9.66 0c-1.99 0-3.67 1.68-3.67 3.67 0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55z"/>
+          </svg>
+          <p class="quote">“This is a sample testimonial text. The service was excellent!”</p>
+          <div class="author">
+            <div>
+              <h4>John Doe</h4>
+              <span>Founder, Startup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card" style="background: #f3f4f6">
+          <div class="author-img-wrap" style="--shadow-color: #ef4444">
+            <img src="https://via.placeholder.com/70" alt="Jane Smith" class="testimg">
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24" style="margin-top:50px;">
+            <path d="M7.17 6C5.18 6 3.5 7.68 3.5 9.67c0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55zm9.66 0c-1.99 0-3.67 1.68-3.67 3.67 0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55z"/>
+          </svg>
+          <p class="quote">“Amazing experience, I saw results within a week!”</p>
+          <div class="author">
+            <div>
+              <h4>Jane Smith</h4>
+              <span>Marketing Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card" style="background: #f3f4f6">
+          <div class="author-img-wrap" style="--shadow-color: #22c55e">
+            <img src="https://via.placeholder.com/70" alt="David Lee" class="testimg">
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24" style="margin-top:50px;">
+            <path d="M7.17 6C5.18 6 3.5 7.68 3.5 9.67c0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55zm9.66 0c-1.99 0-3.67 1.68-3.67 3.67 0 1.62 1.01 3.01 2.46 3.54-.74 1.77-2.33 3.04-4.16 3.53v1.75c3.32-.61 5.92-3.52 5.92-7.28V6h-.55z"/>
+          </svg>
+          <p class="quote">“Best decision ever! Highly recommended.”</p>
+          <div class="author">
+            <div>
+              <h4>David Lee</h4>
+              <span>CEO, TechCorp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+        
         <section class="section testimonials__v2" id="testimonials">
           <div class="container">
             <div class="row mb-5">
@@ -1097,7 +1166,31 @@ License: https://freebootstrap.net/license
     });
 </script>
 
-   
+<!--    testimonial script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".testimonials-swiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  });
+</script>
+<!--    testimonial script -->
+    
 
 
   </body>
