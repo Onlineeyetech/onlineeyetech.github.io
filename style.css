@@ -1494,8 +1494,8 @@ margin: 20px 0px;
 /* Grid */
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
 }
 
 /* Card */
