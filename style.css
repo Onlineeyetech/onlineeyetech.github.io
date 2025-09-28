@@ -1639,3 +1639,10 @@ position: absolute;
     width: 100%;
     height: 100%;
 }
+.contact-banner{
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
