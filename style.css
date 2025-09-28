@@ -1269,7 +1269,7 @@ width:100px;
 
     .logo-slide-track {
       display: flex;
-      width: calc(250px * 10); /* Adjust to number of logos */
+      width: calc(450px * 10); /* Adjust to number of logos */
       animation: scroll 25s linear infinite;
       transition: all 0.3s ease-in-out;
     }
